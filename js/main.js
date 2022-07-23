@@ -29,10 +29,10 @@
                     <div class="name-user">
                         <div class="name-join">
                             <h4>${user.login}</h4>
-                            <p class="data">Joined 25 jan 2020</p>
+                            <p class="data">Joined ${user.created_at}</p>
                         </div>
-                        <p>@euverrange</p>
-                        <p class="bio">This profile has no bio</p>
+                        <p>${user.name}</p>
+                        <p class="bio">${user.bio}</p>
 
                         <div class="repos-container">
                             <div class="infos-user">
@@ -54,12 +54,12 @@
                         <div class="links">
                             <div class="links-list">
                                 <div class="list-1">
-                                    <a href=""><ion-icon name="pin" class="icon"></ion-icon>Praia Grande, SP</a>
-                                    <a href=""><ion-icon name="pin" class="icon"></ion-icon>https://github.com/Guilherme-Verrange</a>
+                                    <a href=""><ion-icon name="pin" class="icon"></ion-icon>${user.location}</a>
+                                    <a href=""><ion-icon name="pin" class="icon"></ion-icon>${user.html_url}</a>
                                 </div>
                                 <div class="list-2">
-                                    <a href=""><ion-icon name="logo-twitter" class="icon"></ion-icon>Not Available</a>
-                                    <a href=""><ion-icon name="business" class="icon"></ion-icon>Empresa.com</a>
+                                    <a href=""><ion-icon name="logo-twitter" class="icon"></ion-icon>${user.twitter_username}</a>
+                                    <a href=""><ion-icon name="business" class="icon"></ion-icon>${user.company}</a>
                                 </div>
                             </div>
                         </div>
