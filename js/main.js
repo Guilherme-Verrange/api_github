@@ -54,8 +54,8 @@
                         <div class="links">
                             <div class="links-list">
                                 <div class="list-1">
-                                    <a href="${user.location}"><ion-icon name="pin" class="icon"></ion-icon></a>
-                                    <a href="${user.html_url}"><ion-icon name="pin" class="icon"></ion-icon></a>
+                                    <a href="${user.location}"><ion-icon name="pin" class="icon">${user.location}</ion-icon></a>
+                                    <a href="${user.html_url}"><ion-icon name="pin" class="icon">${user.html_url}</ion-icon></a>
                                 </div>
                                 <div class="list-2">
                                     <a href=""><ion-icon name="logo-twitter" class="icon"></ion-icon>${user.twitter_username}</a>
