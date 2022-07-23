@@ -28,7 +28,7 @@
                     </div>
                     <div class="name-user">
                         <div class="name-join">
-                            <h4></h4>
+                            <h4>${user.login}</h4>
                             <p class="data">Joined 25 jan 2020</p>
                         </div>
                         <p>@euverrange</p>
@@ -42,11 +42,11 @@
                                 </div>
                                 <div class="followers">
                                     <h5>Followers</h5>
-                                    <p>3938</p>
+                                    <p>${user.followers}</p>
                                 </div>
                                 <div class="following">
                                     <h5>Following</h5>
-                                    <p>8</p>
+                                    <p>${user.following}</p>
                                 </div>
                             </div>
                         </div>
@@ -79,7 +79,7 @@
         const user = e.target.value;
         if (user.length > 0) {
 
-            getUser(user).then(res => console.log(res));
+            getUser(user).then(res => showProfile(res));
 
         }
 
